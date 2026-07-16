@@ -1,0 +1,52 @@
+{
+  "baseline": {
+    "accuracy": 0.6539753639417694,
+    "precision": 0.27605633802816903,
+    "recall": 0.6533333333333333,
+    "f1": 0.38811881188118813,
+    "roc_auc": 0.7432991251682368
+  },
+  "improved": {
+    "accuracy": 0.8160694288913773,
+    "precision": 0.4549763033175355,
+    "recall": 0.48,
+    "f1": 0.46715328467153283,
+    "roc_auc": 0.7521769851951547
+  },
+  "pct_improvement": {
+    "accuracy": 24.785958904109577,
+    "precision": 64.81284456910724,
+    "recall": -26.530612244897963,
+    "f1": 20.363473856695954,
+    "roc_auc": 1.1943859109088188
+  },
+  "best_model_family": "random_forest",
+  "model_search_log": [
+    {
+      "model_family": "random_forest",
+      "best_params": {
+        "max_depth": null,
+        "min_samples_leaf": 4,
+        "n_estimators": 400
+      },
+      "cv_roc_auc": 0.893195363524829
+    },
+    {
+      "model_family": "gradient_boosting",
+      "best_params": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 200
+      },
+      "cv_roc_auc": 0.8857559621500574
+    }
+  ],
+  "n_samples_total": 13802,
+  "n_train": 10230,
+  "n_test": 3572,
+  "test_months": [
+    4,
+    8,
+    12
+  ]
+}
